@@ -1,8 +1,9 @@
 baseURL: "https://wecoding20.git.io/"
-title: wecoding
+title: 잡다한 코딩스터디 WeCoding
 paginate: 5
 theme: PaperMod
 
+enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -13,10 +14,16 @@ googleAnalytics: UA-123-45
 minify:
     disableXML: true
     minifyOutput: true
+    
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: ExampleSite
+    title: WeCoding 위코딩
     description: "ExampleSite description"
     keywords: [Blog, Portfolio, PaperMod]
     author: Me
@@ -50,15 +57,14 @@ params:
 
     label:
         text: "Home"
-        icon: /apple-touch-icon.png
         iconHeight: 35
 
     # profile-mode
     profileMode:
         enabled: false # needs to be explicitly set
-        title: ExampleSite
-        subtitle: "This is subtitle"
-        imageUrl: "<img location>"
+        title: WeCoding 위코딩
+        subtitle: "잡다한 코딩스터디"
+        imageUrl: "./content/assets/title_image.jpg"
         imageWidth: 120
         imageHeight: 120
         imageTitle: my image
@@ -70,16 +76,17 @@ params:
 
     # home-info mode
     homeInfoParams:
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to my blog
+        Title: "WeCoding 위코딩 👩‍💻🧑‍💻"
+        Content: |
+            쓰레기의 삶에서 벗어나기 :)
+            
+            알고리즘, CV, deep-learning, AR 등 잡다한 분야를 다루는 코딩 스터디입니다
+            
+            be \<strong> You can do it 🔥
 
     socialIcons:
-        - name: twitter
-          url: "https://twitter.com/"
-        - name: stackoverflow
-          url: "https://stackoverflow.com"
         - name: github
-          url: "https://github.com/"
+          url: "https://github.com/wecoding20"
 
     analytics:
         google:
@@ -111,24 +118,18 @@ params:
         keys: ["title", "permalink", "summary", "content"]
 menu:
     main:
-        - identifier: categories
-          name: categories
-          url: /categories/
+        - name: Profile
+          url: profile/
           weight: 10
-        - identifier: tags
-          name: tags
-          url: /tags/
-          weight: 20
-        - identifier: example
-          name: example.org
-          url: https://example.org
-          weight: 30
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-# pygmentsUseClasses: true
-# markup:
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences: true
-#         guessSyntax: true
-#         lineNos: true
-#         style: monokai
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+        - name: Categories
+          url: categories/
+          weight: 10
