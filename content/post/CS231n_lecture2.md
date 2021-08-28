@@ -10,7 +10,8 @@ description: "Stanford University CS231n 이론 스터디"
 
 tags: ["CS231n", "deep-learning", "Computer-Vision"]
 
-categories: ["CS231n"]
+categories: ["CV"]
+subcategories: ["study"]
 
 ---
 

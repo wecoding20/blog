@@ -18,6 +18,15 @@
     src: url('../../../assets/fonts/경기천년바탕_Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: '넷마블 Bold';
+    src: url('../../../assets/fonts/netmarbleB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '나눔코딩 Bold';
+    src: url('../../../assets/fonts/NanumGothicCoding-Bold.ttf') format('truetype');
+}
 
 :root {
     --gap: 24px;

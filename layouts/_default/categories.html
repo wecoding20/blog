@@ -1,0 +1,43 @@
+{{- define "main" }}
+
+<header class="page-header" style=font-family:가나초콜릿>
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- end }}
+</header>
+
+<div class="container">
+    {{ $baseurl := .Site.BaseURL }}
+    {{ $data := .Data }}
+    {{ $site := .Site }}
+
+    {{/* 컴퓨터비전 메뉴 */}}
+    <div class="stick"></div>
+    <p class="title">deep-learning-cvs</p>
+    <div class="wrap">
+        {{ range $.Site.Data.subclist.CV }}
+            <a class='categoriesTag' href="{{ $baseurl }}/subcategories/{{ . }}">{{ . }}</a>
+        {{ end }}
+    </div>
+
+    {{/* 블록체인 메뉴 */}}
+    <p class="title">Blockchain</p>
+    <div class="wrap">
+        {{ range $.Site.Data.subclist.Blockchain }}
+            <a class='categoriesTag' href="{{ $baseurl }}/subcategories/{{ . }}">{{ . }}</a>
+        {{ end }}
+    </div>
+    
+    {{/* 메타버스 메뉴 */}}
+    <p class="title">Metaverse</p>
+    <div class="wrap">
+        {{ range $.Site.Data.subclist.Metaverse }}
+            <a class='categoriesTag' href="{{ $baseurl }}/subcategories/{{ . }}">{{ . }}</a>
+        {{ end }}
+    </div>
+</div>
+
+{{- end }}{{/* end main */}}

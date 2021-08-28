@@ -133,3 +133,8 @@ menu:
         - name: Categories
           url: categories/
           weight: 10
+
+taxonomies:
+  category: categories
+  tag: tags
+  subcategory: subcategories
