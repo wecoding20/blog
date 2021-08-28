@@ -1,6 +1,6 @@
 ---
 title: "Categories"
 layout: "categories"
-# url: "/archives"
+url: "/categories"
 summary: "categories"
 ---
