@@ -25,6 +25,7 @@
 .logo a {
     font-size: 24px;
     font-weight: 700;
+    color: var(--code-bg);
 }
 
 .logo a img {
@@ -67,11 +68,21 @@ body:not(.dark) #sun {
 
 #menu a {
     font-size: 16px;
+    color: var(--code-bg);
 }
 
 #menu .active {
     font-weight: 500;
+    padding-bottom: 4px;
     border-bottom: 2px solid currentColor;
+    color: #ffe626;
+}
+
+#menu span:hover {
+    font-weight: 500;
+    padding-bottom: 4px;
+    border-bottom: 2px solid currentColor;
+    color: #ffe626;
 }
 
 .lang-switch li,

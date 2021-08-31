@@ -28,6 +28,11 @@
     src: url('../../../assets/fonts/NanumGothicCoding-Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: '62470';
+    src: url('../../../assets/fonts/62570.ttf') format('truetype');
+}
+
 :root {
     --gap: 24px;
     --content-gap: 20px;

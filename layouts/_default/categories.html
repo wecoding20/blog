@@ -15,8 +15,9 @@
     {{ $site := .Site }}
 
     {{/* 컴퓨터비전 메뉴 */}}
-    <div class="stick"></div>
-    <p class="title">deep-learning-cvs</p>
+    <div class="titleWrap">
+        <p class="categoiresImage" style=font-family:가나초콜릿>〉</p>
+        <p class="title">deep-learning-cv</p>
     <div class="wrap">
         {{ range $.Site.Data.subclist.CV }}
             <a class='categoriesTag' href="{{ $baseurl }}/subcategories/{{ . }}">{{ . }}</a>
@@ -24,15 +25,19 @@
     </div>
 
     {{/* 블록체인 메뉴 */}}
-    <p class="title">Blockchain</p>
+    <div class="titleWrap">
+        <p class="categoiresImage" style=font-family:가나초콜릿>〉</p>
+        <p class="title">Blockchain</p>
     <div class="wrap">
         {{ range $.Site.Data.subclist.Blockchain }}
-            <a class='categoriesTag' href="{{ $baseurl }}/subcategories/{{ . }}">{{ . }}</a>
+            <a class='categoriesTag' href="{{ $baseurl }}/sub/{{ . }}">{{ . }}</a>
         {{ end }}
     </div>
     
     {{/* 메타버스 메뉴 */}}
-    <p class="title">Metaverse</p>
+    <div class="titleWrap">
+        <p class="categoiresImage" style=font-family:가나초콜릿>〉</p>
+        <p class="title">Metaverse</p>
     <div class="wrap">
         {{ range $.Site.Data.subclist.Metaverse }}
             <a class='categoriesTag' href="{{ $baseurl }}/subcategories/{{ . }}">{{ . }}</a>

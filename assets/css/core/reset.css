@@ -21,12 +21,20 @@ h6 {
     color: var(--primary);
 }
 
+#moon {
+    color: var(--code-bg);
+}
+
+#sun {
+    color: var(--code-bg);
+}
+
 body {
     font-family: '롯데마트드림';
     font-size: 18px;
     line-height: 1.6;
     word-break: break-word;
-    background: var(--theme);
+    background: var(--code-bg);
 }
 
 article,

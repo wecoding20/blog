@@ -7,29 +7,52 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 80px;
+    margin-top: 15px;
+    margin-bottom: 60px;
 }
 
-.stick {
-    height: 40px;
-    width: 10px;
-    background-color: #f2ed44;
+.titleWrap {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-bottom: 15px;
+}
+
+.categoiresImage {
+    font-weight: bold;
+    position: absolute;
+    color: #ffc926;
+    margin-left: 10px;
+    margin-top: 2px;
 }
 
 .title {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
     font-size: 23px;
-    margin-bottom: 15px;
     color: #383838;
     border-radius: 8px;
-    padding: 5px 0px 5px 12px;
+    margin-left: 30px;
+}
+
+.line {
+    height: 2px;
+    width: 800px;
+    margin: 10px 0px 20px 10px;
+    background: linear-gradient( to left, #ffe626, #ffc926 );
 }
 
 .categoriesTag {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0px 8px 0px 8px;
+    margin: 0px 8px 0px 10px;
     border: solid 2px #c9c9c9;
     padding: 5px 20px;
     border-radius: 120px;
     color: #c9c9c9;
+}
+
+a.categoriesTag:hover {
+    color: #ffe626;
+    border: solid 2px #ffe626;
 }

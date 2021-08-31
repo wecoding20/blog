@@ -1,0 +1,98 @@
+.profileWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 170px;
+}
+
+.profileEunbi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: profile-eunbi;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+.profileHyeonseok {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: profile-hyeonseok;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+.profilejooheon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: profile-jooheon;
+    animation-duration: 2s;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+.profileName {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: '가나초콜릿';
+}
+
+.profileText {
+    font-size: 15px;
+}
+
+.profileImage {
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+@keyframes profile-eunbi {
+    0%
+    {
+        opacity: 0%;
+    }
+
+    100%
+    {
+        opacity: 100%;
+        margin-top: 20px;
+    }
+}
+
+@keyframes profile-hyeonseok {
+    0%
+    {
+        opacity: 0%;
+    }
+
+    100%
+    {
+        opacity: 100%;
+        margin-top: 20px;
+    }
+}
+
+@keyframes profile-jooheon {
+    0%
+    {
+        opacity: 0%;
+    }
+
+    100%
+    {
+        opacity: 100%;
+        margin-top: 20px;
+    }
+}

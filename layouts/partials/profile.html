@@ -1,5 +1,20 @@
-<article style="display: flex; flex-direction: row; justify-content: center; margin-bottom:170px">
-    <img style="margin-right: 20px; margin-top: 100px" src=/images/profile/profile_example1.png alt=profile width=200 />
-    <img style="margin-right: 20px; margin-bottom: 100px;" src=/images/profile/profile_example2.png alt=profile width=200 />
-    <img style="margin-top: 100px" src=/images/profile/profile_example3.png alt=profile width=200 />
+<article class="profileWrap">
+    {{ $baseurl := .Site.BaseURL }}
+    <a href="{{ $baseurl }}/profile" class="profileEunbi">
+        <img class="profileImage" src=/images/profile/profile_eunbi.png alt=profile />
+        <p class="profileName">은비</p>
+        <p class="profileText">Hyun Eunbi</p>
+    </a>
+
+    <a href="{{ $baseurl }}/profile" class="profileHyeonseok">
+        <img class="profileImage" src=/images/profile/profile_hyeonsuk.png alt=profile />
+        <p class="profileName">현석</p>
+        <p class="profileText">Chae Hyeonseok</p>
+    </a>
+
+    <a href="{{ $baseurl }}/profile" class="profilejooheon">
+        <img class="profileImage" src=/images/profile/profile_juheon.png alt=profile />
+        <p class="profileName">주헌</p>
+        <p class="profileText">Baek Jooheon</p>
+    </a>
 </article>
