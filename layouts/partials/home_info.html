@@ -1,7 +1,7 @@
 {{- with $.Site.Params.homeInfoParams }}
 <article class="first-entry home-info">
     <header class="entry-header">
-        <h1 style="font-family: '가나초콜릿';">{{ .Title | markdownify }}</h1>
+        <h1 class="homeTitle" style="font-family: '가나초콜릿';">{{ .Title | markdownify }}</h1>
     </header>
     <section class="entry-content">
         <p style="font-family: '롯데마트드림';">{{ .Content | markdownify }}</p>

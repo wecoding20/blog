@@ -1,0 +1,57 @@
+.homeTitle {
+    animation: typing 1.8s steps(15);
+    overflow: hidden;
+    border-right: 1px solid black;
+    width: 100%;
+    white-space: nowrap;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 580px;
+        border-right: 0px solid black;
+    }
+}
+
+.entry-content {
+    animation-name: entry-content;
+    animation-duration: 2s;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-fill-mode: forwards;
+}
+
+@keyframes entry-content{
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 580px;
+    }
+}
+
+.github-icon {
+    animation-name: entry-content;
+    animation-duration: 2s;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-fill-mode: forwards;
+}
+
+@keyframes github-icon{
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 580px;
+    }
+}
+
+
+
